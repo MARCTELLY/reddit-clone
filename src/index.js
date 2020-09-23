@@ -3,9 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Routes from './routes';
-import { browserHistory } from 'react-router';
+
+
+import history from './history'
+
+
 
 import * as serviceWorker from './serviceWorker';
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,7 +20,7 @@ ReactDOM.render(
 );
 
 ReactDOM.render(
-    <Routes history = { browserHistory } />, document.getElementById('root')
+    <Routes history = { history } />, document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
